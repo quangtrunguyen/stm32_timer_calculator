@@ -6,4 +6,8 @@ def sinusoidal_PWM_frequency(clk, prescaler, arr, samples):
     prescaler -- prescaler for the timer frequency
     arr -- Autoreloadregister,  Counter period of the timer
     """
-    return 0
+
+    if arr <= 0 or clk <= 0 or prescaler <=0 or samples <= 0:
+        return 0
+    else:
+        return (clk/prescaler)/(arr*samples)
