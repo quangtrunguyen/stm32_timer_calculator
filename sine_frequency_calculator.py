@@ -4,7 +4,7 @@ def sinusoidal_PWM_frequency(clk, prescaler, arr, samples):
     Keyword argument:
     clk -- Clock frequency of the STM32
     prescaler -- prescaler for the timer frequency
-    arr -- Autoreloadregister,  Counter period of the timer
+    arr -- Autoreloadregister,  Counter period of the timer max.65535
     """
 
     if arr <= 0 or clk <= 0 or prescaler <=0 or samples <= 0:
