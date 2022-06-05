@@ -6,7 +6,7 @@ def test_sinusoidal_PWM_frequency():
     
 
 def test_adc_frequency_calc():
-    assert adc_frequency_calc(0,1) == 0
+    assert adc_frequency_calc(0,1)==1
     
     
     
